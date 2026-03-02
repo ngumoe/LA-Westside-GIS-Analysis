@@ -112,30 +112,33 @@ Neighborhood labeling
 Comparative layout design
 
 Map Portfolio
-Map 1: True Color Composite
+## Map 1: True Color Composite
 
-Natural RGB representation of NAIP imagery.
+![True Color Composite](images/TRUE%20COLOR.png)
 
-Map 2: Color-Infrared (CIR)
+---
 
-Vegetation displayed in shades of red to emphasize biomass and canopy density.
+## Map 2: Color Infrared (CIR)
 
-Map 3: Vegetation Density (Rectangular Grid)
+![Color Infrared](images/CIR.png)
 
-Fraction of pixels with NDVI > 0.3 aggregated per 200m grid cell.
+---
 
-Map 4: Swimming Pool Density (Hexagonal Grid)
+## Map 3: Vegetation Density (Rectangular Grid)
 
-Fraction of pixels with NDVI < -0.45 aggregated using hexagonal tessellation.
+![Vegetation Density](images/Vegetation%20Density.png)
 
-Map 5: Spectral Classification Visualization
+---
 
-Grayscale imagery with:
+## Map 4: Swimming Pool Density (Hexagonal Grid)
 
-Green overlay → Vegetation mask
+![Swimming Pool Density](images/Swimming%20Pool%20Density.png)
 
-Blue overlay → Water/pool mask
+---
 
+## Map 5: Feature Overlay Visualization
+
+![Feature Overlay](images/Map5.png)
 Comparative high-density vs low-density frames
 
 Key Findings
