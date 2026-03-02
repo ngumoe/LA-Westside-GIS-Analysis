@@ -6,7 +6,8 @@ This project demonstrates advanced remote sensing analysis and GIS spatial model
 
 By completing this analysis, I showcase proficiency in industry‑standard geospatial technologies and analytical methods directly applicable to careers in urban planning, environmental consulting, precision agriculture, and geospatial intelligence.
 
-Learning Objectives Achieved
+**_Learning Objectives Achieved_**
+
 Multi-band raster visualization and interpretation (true color, color‑infrared)
 
 Calculation of Normalized Difference Vegetation Index (NDVI) – a foundational remote sensing metric
@@ -19,21 +20,32 @@ Advanced map layout design with vector/raster integration
 
 Critical evaluation of spectral anomalies and false positives in classification
 
-Technical Skills Demonstrated
-Skill Category	Specific Techniques	Relevance to Industry
+**_Technical Skills Demonstrated_**
+
+Skill Category
+
+Specific Techniques	Relevance to Industry
+
 Remote Sensing	Multi‑band image processing, NDVI calculation, spectral signature interpretation	Essential for environmental monitoring, agriculture, forestry
 Raster Analysis	Reclassification, binary masking, raster calculator	Core competency for any GIS analyst
 Vector Analysis	Grid generation, spatial overlay, polygon labeling	Urban planning, real estate analysis
 Spatial Statistics	Zonal statistics, density aggregation, pattern analysis	Data‑driven decision making, policy research
 Cartography	Print layout design, color theory, blending modes	Professional map production for reports and presentations
-Critical Thinking	Identifying false positives, interpreting land use patterns	Problem‑solving in real‑world consulting scenarios
-Data Sources
+
+Critical Thinking
+
+Identifying false positives, interpreting land use patterns	Problem‑solving in real‑world consulting scenarios
+
+**_Data Sources_**
+
 NAIP (National Agricultural Imagery Program) Aerial Imagery – 2020, 4‑band (Red, Green, Blue, Near‑Infrared), 1‑meter resolution
 
 Los Angeles Neighborhood Boundaries – Polygon layer of Westside communities (e.g., Santa Monica, Venice, Mar Vista)
 
-Methodology
+**_Methodology_**
+
 Image Visualization
+
 True Color Map (RGB): Standard natural color representation using bands 1, 2, 3
 
 Color‑Infrared (CIR) Map: False‑color composite (NIR, Red, Green) to highlight vegetation health
@@ -59,7 +71,8 @@ Grayscale base imagery with green overlay (vegetation) and blue overlay (pools) 
 
 Side‑by‑side comparison of high‑density vs. low‑density areas
 
-Map Products
+**_Map Products_**
+
 Below are the five maps produced in this analysis. Each map integrates the NAIP imagery with Los Angeles neighborhood boundaries and labels.
 
 Map 1: True Color
@@ -97,10 +110,12 @@ Deep shadows in urban canyons occasionally classified as water bodies
 
 Lush green lawns correctly identified, but artificial turf sometimes produced unexpected NDVI values
 
-Methodological Insight
+**_Methodological Insight_**
+
 Grid‑based density mapping proved far more effective for pattern recognition than pixel‑level classification, enabling neighborhood‑scale comparisons essential for urban planning applications.
 
-Real‑World Applications
+**_Real‑World Applications_**
+
 The techniques demonstrated here are directly transferable to numerous professional domains:
 
 Urban Planning: Quantify green space access, identify heat island mitigation opportunities, track urban tree canopy changes over time
@@ -115,7 +130,8 @@ Insurance & Risk Assessment: Map wildfire fuel loads, assess floodplain vegetati
 
 Real Estate Development: Identify neighborhood amenities (greenspace, water features) for site selection and marketing
 
-Software & Tools
+**_Software & Tools_**
+
 QGIS 3.x – Primary GIS platform (open source)
 
 Raster Calculator – NDVI derivation and masking
