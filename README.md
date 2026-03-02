@@ -1,124 +1,107 @@
-Mapping Vegetation & Swimming Pools in Los Angeles
-Remote Sensing & Urban Spatial Intelligence Analysis
-Executive Summary
-
-This project applies advanced remote sensing and GIS spatial modeling techniques to high-resolution 4-band NAIP aerial imagery of Los Angeles’ Westside.
-
-The objective was to extract actionable intelligence on:
-
-Urban vegetation distribution
-
-Residential swimming pool density
-
-Neighborhood-scale spatial patterns
-
-Classification limitations and spectral anomalies
-
-The workflow integrates raster analysis, spectral index modeling, grid-based aggregation, and professional cartographic design — reflecting real-world geospatial consulting applications.
-
-Project Context
-
-Urban planners, environmental analysts, and infrastructure strategists require neighborhood-scale metrics to evaluate:
-
-Green space accessibility
-
-Heat island mitigation capacity
-
-Land use patterns
-
-High-value property features
-
-This project demonstrates an operational methodology for transforming raw multispectral imagery into decision-grade spatial intelligence.
-
-Data Sources
-
-NAIP Aerial Imagery (2020)
-
-4-band imagery (Red, Green, Blue, Near-Infrared)
-
-1-meter spatial resolution
-
-Los Angeles Neighborhood Boundaries
-
-Polygon dataset of Westside communities
-
-Includes Santa Monica, Venice, Mar Vista, and adjacent zones
-
-Analytical Workflow
-1️⃣ Multi-Band Visualization
-
-True Color Composite (RGB)
-
-Color-Infrared Composite (NIR, Red, Green)
-
-Spectral interpretation of vegetation vigor
-
-2️⃣ NDVI Computation
-𝑁
-𝐷
-𝑉
-𝐼
-=
-(
-𝑁
-𝐼
-𝑅
-−
-𝑅
-𝑒
-𝑑
-)
-/
-(
-𝑁
-𝐼
-𝑅
-+
-𝑅
-𝑒
-𝑑
-)
-NDVI=(NIR−Red)/(NIR+Red)
-
-Value Range: -1 to 1
-
-Vegetation Threshold: > 0.3
-
-Water/Pool Threshold: < -0.45
-
-3️⃣ Raster Classification
-
-Binary vegetation mask
-
-Binary swimming pool mask
-
-False positive evaluation
-
-4️⃣ Density Modeling (Grid-Based Aggregation)
-Grid Type	Purpose	Justification
-Rectangular (200m)	Vegetation Density	Simple spatial aggregation
-Hexagonal (200m)	Pool Density	Reduced directional bias
-
-Grid-based density mapping enabled neighborhood-level comparisons rather than noisy pixel-level classification.
-
-5️⃣ Cartographic Production
-
-Blending modes for feature emphasis
-
-Vector overlay integration
-
-Neighborhood labeling
-
-Comparative layout design
-
-Map Portfolio
-## Map 1: True Color Composite
-
-![True Color Composite](images/TRUE%20COLOR.png)
+# Mapping Vegetation & Swimming Pools in Los Angeles  
+## A Remote Sensing & GIS Analysis
 
 ---
 
-## Map 2: Color Infrared (CIR)
+## Project Overview
+
+This project demonstrates advanced remote sensing analysis and GIS spatial modeling using high-resolution 4-band NAIP aerial imagery of Los Angeles’ Westside.
+
+The primary objective is to extract meaningful insights about urban vegetation patterns and swimming pool distribution through raster analysis, spectral indices, and vector-based zonal statistics.
+
+By completing this analysis, I showcase proficiency in industry-standard geospatial technologies and analytical methods directly applicable to careers in urban planning, environmental consulting, precision agriculture, and geospatial intelligence.
+
+---
+
+## Learning Objectives Achieved
+
+- Multi-band raster visualization and interpretation (True Color, Color-Infrared)
+- Calculation of Normalized Difference Vegetation Index (NDVI)
+- Raster calculator operations and threshold-based classification
+- Zonal statistics aggregation using rectangular and hexagonal grids
+- Advanced map layout design with vector/raster integration
+- Critical evaluation of spectral anomalies and false positives in classification
+
+---
+
+## Technical Skills Demonstrated
+
+| Skill Category      | Specific Techniques | Relevance to Industry |
+|---------------------|--------------------|-----------------------|
+| Remote Sensing | Multi-band image processing, NDVI calculation, spectral signature interpretation | Environmental monitoring, agriculture, forestry |
+| Raster Analysis | Reclassification, binary masking, raster calculator | Core GIS analytical competency |
+| Vector Analysis | Grid generation, spatial overlay, polygon labeling | Urban planning, real estate analysis |
+| Spatial Statistics | Zonal statistics, density aggregation, pattern analysis | Data-driven policy and planning |
+| Cartography | Print layout design, color theory, blending modes | Professional reporting and visualization |
+| Critical Thinking | Identifying false positives, interpreting land use patterns | Applied consulting problem-solving |
+
+---
+
+## Data Sources
+
+- **NAIP (National Agricultural Imagery Program), 2020**
+  - 4-band imagery (Red, Green, Blue, Near-Infrared)
+  - 1-meter spatial resolution
+
+- **Los Angeles Neighborhood Boundaries**
+  - Polygon layer of Westside communities (Santa Monica, Venice, Mar Vista)
+
+---
+
+## Methodology
+
+### 1. Image Visualization
+
+- **True Color Map (RGB):** Standard natural color composite using bands 1, 2, 3  
+- **Color-Infrared (CIR):** False-color composite (NIR, Red, Green) highlighting vegetation health  
+
+---
+
+### 2. Spectral Index Calculation
+
+\[
+NDVI = (NIR - Red) / (NIR + Red)
+\]
+
+- Value range: -1 to 1  
+- Vegetation threshold: > 0.3  
+- Swimming pool threshold: < -0.45  
+
+---
+
+### 3. Density Analysis Using Grids
+
+- **Rectangular grid (200m cells):** Vegetation density via zonal statistics on NDVI > 0.3 mask  
+- **Hexagonal grid (200m cells):** Swimming pool density via zonal statistics on NDVI < -0.45 mask  
+
+Hexagonal grids were selected to reduce directional bias and improve spatial visualization consistency.
+
+---
+
+### 4. Advanced Visualization
+
+- Grayscale base imagery with:
+  - Green overlay (NDVI > 0.3)
+  - Blue overlay (NDVI < -0.45)
+- Side-by-side comparison of high-density and low-density areas
+
+---
+
+# Map Products
+
+Each map integrates NAIP imagery with Los Angeles neighborhood boundaries and labeling.
+
+## Map 1: True Color
+
+Natural color composite using red, green, and blue bands.
+
+![True Color](images/TRUE%20COLOR.png)
+
+---
+
+## Map 2: Color-Infrared (CIR)
+
+False-color composite (NIR, Red, Green) highlighting vegetation in shades of red.
 
 ![Color Infrared](images/CIR.png)
 
@@ -126,130 +109,92 @@ Map Portfolio
 
 ## Map 3: Vegetation Density (Rectangular Grid)
 
+Rectangular grid cells shaded by fraction of pixels with NDVI > 0.3.
+
 ![Vegetation Density](images/Vegetation%20Density.png)
 
 ---
 
 ## Map 4: Swimming Pool Density (Hexagonal Grid)
 
+Hexagonal grid cells shaded by fraction of pixels with NDVI < -0.45.
+
 ![Swimming Pool Density](images/Swimming%20Pool%20Density.png)
 
 ---
 
-## Map 5: Feature Overlay Visualization
+## Map 5: False-Color with Highlighted Features
+
+Grayscale imagery with green vegetation overlay and blue pool overlay.
 
 ![Feature Overlay](images/Map5.png)
-Comparative high-density vs low-density frames
 
-Key Findings
-Vegetation Distribution
+---
 
-Highest density: Santa Monica residential zones and parklands
+# Key Findings & Insights
 
-Lowest density: Commercial corridors and industrial districts
+## Vegetation Distribution
 
-Clear dominance of tree canopy in single-family neighborhoods
+- Highest density: Santa Monica residential zones and parklands (Palisades Park)
+- Lowest density: Commercial corridors and industrial zones near Venice Boulevard
+- Single-family neighborhoods dominate high-vegetation areas
 
-Swimming Pool Patterns
+---
 
-Concentration in affluent low-density housing clusters
+## False Positives & Anomalies
 
-Strong correlation with parcel size and urban morphology
+- Dark rooftops misclassified as water
+- Deep shadows occasionally classified as pools
+- Artificial turf produced inconsistent NDVI values
 
-Classification Challenges Identified
+---
 
-Dark rooftops falsely classified as water
+## Methodological Insight
 
-Deep building shadows misidentified as pools
+Grid-based density mapping proved significantly more effective for pattern recognition than pixel-level classification. This enabled neighborhood-scale comparisons relevant for planning and policy analysis.
 
-Artificial turf producing unexpected NDVI values
+---
 
-This demonstrates critical evaluation beyond algorithmic output — a core competency in applied geospatial consulting.
+# Real-World Applications
 
-Strategic Insight
+- **Urban Planning:** Tree canopy analysis, heat island mitigation, greenspace equity
+- **Public Health:** Vegetation density correlation with health metrics
+- **Environmental Consulting:** Wetland monitoring, drought assessment
+- **Agriculture:** Precision farming, irrigation optimization
+- **Insurance & Risk Assessment:** Wildfire fuel mapping, asset valuation
+- **Real Estate Development:** Amenity mapping for site selection
 
-Pixel-level classification is insufficient for policy and planning decisions.
+---
 
-Grid-based spatial aggregation:
+# Software & Tools
 
-Enhances interpretability
+- QGIS 3.x
+- Raster Calculator
+- Zonal Statistics Tool
+- Print Layout Manager
 
-Reduces noise
+---
 
-Enables neighborhood benchmarking
+# How to Replicate This Analysis
 
-Supports data-driven planning
+1. Clone the repository.
+2. Download 2020 NAIP imagery for Los Angeles Westside.
+3. Load raster and boundaries into QGIS.
+4. Compute NDVI using Raster Calculator.
+5. Apply classification thresholds.
+6. Generate 200m grids and run Zonal Statistics.
+7. Design final map layouts.
 
-Professional Applications
+---
 
-This methodology scales directly to:
+# Connect With Me
 
-Urban Planning
+I am actively seeking opportunities in GIS analysis, remote sensing, urban analytics, and environmental consulting.
 
-Tree canopy assessment
+- Email: trevorngumosr@gmail.com
 
-Heat island mitigation strategy
+---
 
-Green equity analysis
+# License
 
-Environmental Consulting
-
-Wetland mapping
-
-Drought monitoring
-
-Vegetation health tracking
-
-Insurance & Risk Modeling
-
-Wildfire fuel mapping
-
-Asset valuation (pool identification)
-
-Property feature intelligence
-
-Public Health
-
-Vegetation density vs health outcome correlation
-
-Real Estate Analytics
-
-Amenity mapping
-
-High-value feature extraction
-
-Technical Stack
-
-QGIS 3.x
-
-Raster Calculator
-
-Zonal Statistics
-
-Grid Generation Tools
-
-Advanced Print Layout Design
-
-Competencies Demonstrated
-Domain	Skills
-Remote Sensing	Multispectral interpretation, NDVI
-Raster Analysis	Reclassification, masking
-Vector Analysis	Grid creation, spatial overlay
-Spatial Statistics	Zonal aggregation
-Cartography	Professional layout & symbology
-Analytical Reasoning	False positive evaluation
-Repository Structure
-project-root/
-│
-├── README.md
-└── images/
-    ├── TRUE COLOR.png
-    ├── CIR.png
-    ├── Vegetation Density.png
-    ├── Swimming Pool Density.png
-    └── Map5.png
-Closing Statement
-
-This project demonstrates the transformation of raw aerial imagery into structured spatial intelligence suitable for policy design, environmental analysis, and urban investment strategy.
-
-It reflects a scalable, industry-aligned workflow bridging remote sensing science with applied GIS decision support.
+This project is for educational portfolio purposes. Data sources remain property of NAIP/USDA and Los Angeles County GIS.
