@@ -1,4 +1,5 @@
 **Mapping Vegetation & Swimming Pools in Los Angeles: A Remote Sensing & GIS Analysis**
+
 **_Project Overview_**
 This project demonstrates advanced remote sensing analysis and GIS spatial modeling using high-resolution 4‑band NAIP aerial imagery of Los Angeles’ Westside. The primary objective is to extract meaningful insights about urban vegetation patterns and swimming pool distribution through raster analysis, spectral indices, and vector‑based zonal statistics.
 
